@@ -1,5 +1,5 @@
 # aquawatch-iot
-## AquaWatch IoT - Real-time automated boiling test monitoring solution.
+## AquaWatch IoT - Real-time automated temperature monitoring solution.
 An advanced automated solution for precise 100-hour boiling test monitoring, utilizing IoT technology to record and graphically display temperature data in real-time. This data, accessible remotely via a web portal or a mobile app, ensures continuous, accurate tracking and post-test verification for enhanced reliability.
 ## Implementation
 - Processor : Raspberry Pi 4 Model B (Quad-coreCortex-A72 64-bit SoC @ 1.5GHz)
