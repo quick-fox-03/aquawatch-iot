@@ -7,8 +7,8 @@ An advanced automated solution for precise 100-hour boiling test monitoring, uti
 - Programming: Python for sensor data collection and cloud communication
 - Cloud: Thingspeak Cloud
 ## Block Diagram
-![image](https://github.com/user-attachments/assets/aec29d42-b6e5-44b7-84a1-54c0eb85b20e)
+<img src="https://github.com/user-attachments/assets/aec29d42-b6e5-44b7-84a1-54c0eb85b20e" height=300 width=500>
 ## Circuit Diagram
 <img src="https://github.com/user-attachments/assets/1bf27276-cf1b-45b6-83c8-1d3f4cc27cf4" height=300 width=500>
-![image <height=300>](https://github.com/user-attachments/assets/1bf27276-cf1b-45b6-83c8-1d3f4cc27cf4)
+
 
