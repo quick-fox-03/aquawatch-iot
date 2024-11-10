@@ -30,4 +30,4 @@ The web based data visualization platform relies on Thingspeak cloud to fetch da
 Provides users with a easy remote access to data recorded by the edge device and sent over to Thingspeak cloud as well as allows for easy integration of MATLAB analytics.
 
 Click this [link](https://aquawatch-iot.vercel.app/) to redirect to active deployment via Vercel!
-
+<img src="https://github.com/quick-fox-03/aquawatch-iot/blob/main/public/web%20portaljpg.jpg?raw=true">
