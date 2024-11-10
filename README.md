@@ -24,4 +24,10 @@ The temperature sensor used here, DS18B20, is a digital temperature sensor that 
 8. Enter `cat w1_slave` which will show the raw temperature reading output by the sensor.
 9. Enter `cd` to return to the root directory
 
+## Web based data visualization platform
+The web based data visualization platform relies on Thingspeak cloud to fetch data and display it in a tabular format with a graph showcasing its recent trends.
+
+Provides users with a easy remote access to data recorded by the edge device and sent over to Thingspeak cloud as well as allows for easy integration of MATLAB analytics.
+
+Click this [link](https://aquawatch-iot.vercel.app/) to redirect to active deployment via Vercel!
 
