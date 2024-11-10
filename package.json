@@ -1,0 +1,17 @@
+{
+  "name": "aquawatch-web",
+  "version": "1.0.0",
+  "description": "a website to display temperature values recorded in an experiment",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "quick-fox-03",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.1"
+  }
+}

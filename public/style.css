@@ -1,0 +1,15 @@
+body{
+    background-color: black;
+    background-image: url("https://www.toptal.com/designers/subtlepatterns/uploads/dot-grid.png");    
+}
+.nav-link:hover {
+    color: white;  /* Example: change text color */
+    text-decoration: underline;  /* Example: add an underline */
+    display: flex;
+}
+#about > p{
+    font-size: 20px;
+}
+#hardware > ul{
+    font-size: large;
+}

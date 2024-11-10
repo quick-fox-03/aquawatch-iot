@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>AquawatchIOT</title>
+</head>
+<body>
+
+    <div class="container-fluid">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+              <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+              <span class="fs-2">Aquawatch IoT</span>
+            </a>
+      
+            <ul class="nav nav-pills">
+              <li class="nav-item"><a href="./index.html" class="nav-link" aria-current="page" style="font-size: large;">Home</a></li>
+              <li class="nav-item"><a href="./about.html" class="nav-link active" style="font-size: large;">About</a></li>
+              <li class="nav-item"><a href="./dataView.html" class="nav-link" style="font-size: large;">Data</a></li>
+            </ul>
+        </header>
+
+        <div id="about">
+            <h2>Overview</h2>
+            <p>
+                This project aims to develop a web-based application for real-time temperature monitoring of chemical solutions involved in construction of insulators.</br>
+                It automates data collection process and allows users to access and visualize temperature data in a convenient and accessible manner.
+            </p>
+            <h2>Problem Statement</h2>
+            <p>
+                The manual monitoring of the 100-hour boiling test requires continuous human presence, which is time-consuming and prone to errors. A web-based mobile application that displays real-time temperature data can
+                automate the monitoring process and improve efficiency.
+            </p>
+            <h2>Implementation</h2>
+            <h3>Hardware</h3>
+            <p>The below listed equipment is used to construct the edge device responsible for data collection, pre-processing and transmission to cloud data centers.</p>
+            <div class="d-flex" id="hardware">
+                <img src="https://images.unsplash.com/photo-1631553126875-88a6f19b90c2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" style="border-radius: 50%; width: 240px; height: 240px;"/>
+                <ul>
+                    <li class="my-3">Processor: Raspberry Pi 4 Model B (Quad-coreCortex-A72 64-bit SoC @ 1.5GHz)</li>
+                    <li class="my-3">Memory: 2GB LPDDR4 SDRAM</li>
+                    <li class="my-3">Storage: 32GB SD microSD Card</li>
+                    <li class="my-3">Temperature Sensor: DS18B20 Digital Temperature Sensor</li>
+                </ul>
+            </div>
+            <h3>Software</h3>
+            <p>Following are the tools used in building the software web-based platform, and establishing the cloud connection for data storage.</p>
+            <div class="d-flex" id="hardware">
+                <img src="https://images.unsplash.com/photo-1579403124614-197f69d8187b?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" style="border-radius: 50%; width: 240px; height: 240px;"/>
+                <ul>
+                    <li class="my-3">Operating Systems:
+                        <ul>
+                            <li>
+                                Windows 10/11 for web-platform development.
+                            </li>
+                            <li>
+                                Raspberry Pi-OS, formerly Raspbian for edge device programming.
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="my-3">Programming:
+                        <ul>
+                            <li>
+                                Python for programming Raspberry Pi-4.
+                            </li>
+                            <li>
+                                Javascript for programming the web-platform.
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="my-3">Development Environment: Visual Studio Code IDE</li>
+                    <li class="my-3">Libraries and Frameworks: 
+                        <ul>
+                            <li>Express for server-side programming.</li>
+                            <li>Axios for HTTP request handling during Cloud communication.</li>
+                        </ul>
+                    </li>
+                    <li class="my-3">Cloud Services: Thingspeak Cloud</li>
+                    <li class="my-3">Security: 
+                        <ul>
+                            <li>SSL/TLS for secure communication.</li>
+                            <li>API key authentication for data channel access.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <h3>Circuit Diagram</h3>
+            <div class="">
+            <img src="./image.png" style="width: 900px; height: 500px;"/>
+            <p style="font-size: 20px;">This is the circuit diagram for the data-collecting edge-device. It uses DS18B20 Temperature Sensor for temperature data collection, which is pre-processed at edge level by the Single Board Computer Raspberry Pi-4.<br> After the data is processed, it is then sent over to Thingspeak Cloud Channel for visualization and possibly aid in data-analytics.</p>
+        </div>
+        </div>
+    
+        <footer  class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+              <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+              </a>
+              <span class="mb-3 mb-md-0 text-body-secondary">Aquawatch IoT</span>
+            </div>
+        
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+              <li class="ms-3"><a class="text-body-secondary" href="https://github.com/quick-fox-03/aquawatch-iot">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                </svg>
+              </a></li>            
+            </ul>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
